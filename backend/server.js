@@ -11,7 +11,7 @@ app.listen(process.env.PORT , () => {
 app.use(express.json())
 app.use*express.urlencoded({extended : true});
 
-app.use("/quran" , )
-app.use("/bible" , )
-app.use("/tanakh" , )
-app.use("/geeta" , )
+// app.use("/quran" , )
+// app.use("/bible" , )
+// app.use("/tanakh" , )
+// app.use("/geeta" , )
