@@ -28,9 +28,9 @@ function Quran() {
   const handleSubmit = async () => {
     if (concern.trim()) {
 
-      const response = await fetch('/api/quran-solution', { method: 'POST', body: JSON.stringify({ concern }) });
+      const response = await fetch('http://localhost:3000/quran', { method: 'POST', body: JSON.stringify({ concern }) });
       const data = await response.json();
-      setSolution(data.solution); 
+      setSolution(data); 
     }
   };
 

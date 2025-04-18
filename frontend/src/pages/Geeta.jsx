@@ -28,9 +28,9 @@ function Geeta() {
   const handleSubmit = async () => {
     if (concern.trim()) {
 
-      const response = await fetch('/api/geeta-solution', { method: 'POST', body: JSON.stringify({ concern }) });
+      const response = await fetch('http://localhost:3000/geeta', { method: 'POST', body: JSON.stringify({ concern }) });
       const data = await response.json();
-      setSolution(data.solution); 
+      setSolution(data); 
     }
   };
 

@@ -7,9 +7,9 @@ function Tanakh() {
   const handleSubmit = async () => {
     if (concern.trim()) {
 
-      const response = await fetch('/api/tanakh-solution', { method: 'POST', body: JSON.stringify({ concern }) });
+      const response = await fetch('http://localhost:3000/tanakh', { method: 'POST', body: JSON.stringify({ concern }) });
       const data = await response.json();
-      setSolution(data.solution); 
+      setSolution(data); 
     }
   };
 
