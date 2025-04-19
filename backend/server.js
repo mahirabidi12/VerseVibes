@@ -1,7 +1,7 @@
 import app from "./app.js";
 import express from "express";
 import dotenv from "dotenv";
-import cors from 'cors'
+import cors from "cors";
 import {
   getQuranResponse,
   getBibleResponse,
@@ -11,16 +11,16 @@ import {
 
 dotenv.config();
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
-});
-
-app.use(cors())
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/quran", getQuranResponse);
-app.use("/bible", getBibleResponse);
-app.use("/tanakh", getGeetaResponse);
-app.use("/geeta", getTanakhResponse);
+app.post("/quran", getQuranResponse);
+app.post("/bible", getBibleResponse);
+app.post("/tanakh", getTanakhResponse);
+app.post("/geeta", getGeetaResponse);
+
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
+});
