@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Scroll, Send, Star } from 'lucide-react';
 
+
 function Tanakh() {
   const [concern, setConcern] = useState('');
   const [solution, setSolution] = useState('');
@@ -19,7 +20,7 @@ function Tanakh() {
     if (concern.trim()) {
       setIsLoading(true);
       try {
-        const response = await fetch('http://localhost:3000/tanakh', { 
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/tanakh`, { 
           method: 'POST', 
           headers: {
             'Content-Type': 'application/json',

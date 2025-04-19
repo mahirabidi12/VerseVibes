@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Feather, Send, Flame } from 'lucide-react';
 
+
 function Geeta() {
   const [concern, setConcern] = useState('');
   const [solution, setSolution] = useState('');
@@ -19,7 +20,7 @@ function Geeta() {
     if (concern.trim()) {
       setIsLoading(true);
       try {
-        const response = await fetch('http://localhost:3000/geeta', { 
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/geeta`, { 
           method: 'POST', 
           headers: {
             'Content-Type': 'application/json',
