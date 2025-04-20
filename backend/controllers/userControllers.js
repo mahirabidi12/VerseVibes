@@ -9,6 +9,7 @@ import {
 export async function getQuranResponse(req, res) {
   try {
     const issue = req.body;
+    console.log(req)
     const prompt = getQuranPrompt(issue);
     const response = await getGeminiData(prompt);
     res.json(response);
@@ -20,10 +21,11 @@ export async function getQuranResponse(req, res) {
 export async function getBibleResponse(req, res) {
   try {
     const issue = req.body;
+    console.log(issue)
     const prompt = getBiblePrompt(issue);
     const response = await getGeminiData(prompt);
     res.json(response);
-  } catch (error) {
+  } catch (error) { 
     console.log("Could Not Fetch Data", error);
   }
 }
