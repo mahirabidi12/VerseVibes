@@ -1,3 +1,4 @@
+
 # ✨ VerseVibes: Spiritual Wisdom, One Verse at a Time
 
 > **AI** (used only for generating CSS styles)
@@ -20,7 +21,7 @@ Whether you're curious, in need of comfort, or seeking direction—**VerseVibes*
 
 ## 🚀 Features
 
-- 🔮 **Multi-Religious Selection** – Choose from Bhagavad Gita, Bible, Quran, and Guru Granth Sahib
+- 🔮 **Multi-Religious Selection** – Choose from Bhagavad Gita, Bible, Quran, and Tanakh
 - 🧭 **Dynamic Routing** – Religion-based pages powered by React Router
 - 📥 **Form Submission** – Review Form For Users
 - ⚙️ **Real-time API Integration** – Backend APIs dynamically generate responses
