@@ -6,6 +6,10 @@
 
 ---
 
+⚠️ Note on Backend Response Time
+This project uses Render for hosting the backend and Vercel for the frontend.
+Since the backend is hosted on Render's free tier, the server may go to sleep after periods of inactivity. As a result, the first request may take 10–30 seconds to respond while the server wakes up.
+
 ## 📌 Description
 
 **VerseVibes** is your personalized spiritual companion. Users can choose from various sacred texts and submit a personal issue or query. Based on their chosen religion, VerseVibes provides thoughtful responses rooted in the teachings of that scripture.
